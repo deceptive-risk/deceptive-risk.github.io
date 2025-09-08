@@ -170,6 +170,8 @@
                     </p>
                 <p class="text-justify">
                     We evaluate DRM in three sets of experiments involving concept shift and covariate shift. Across all three examples, we find that DRM leads to strong OOD generalization in settings involving spurious correlations or irrelevant distractors. In contrast, standard empirical risk minimization (ERM) fails to generalize. We also compare to invariant risk minimization (IRM), which assumes oracle access to a partitioning of training data into a finite number of domains; we find that DRM is able to match the performance of IRM without requiring such an oracle.
+                </p>
+                <p> </p>
                 </div>
         </div>
 
@@ -193,11 +195,15 @@
                 <h3>
                     Concept shift: Colored-MNIST
                 </h3>
+                <p></p>
                 <p style="text-align:center;">
                     <image src="images/colored_mnist_tsne.png" width="100%">
                 </p>
                 <p class="text-justify">
                     Next, we consider the Colored-MNIST task introduced by Arjovsky et al. (2019). The goal is to classify MNIST images, where the digits have been colored either red or green. Similar to the toy 2D example, the color is assigned in a way that has a strong (but spurious) correlation with the label. As a result, ERM-based methods that only rely on minimizing training loss exploit the color information to make predictions; when the correlation between color and the label is reversed at test time, performance degrades significantly. In contrast, DRM learns to ignore color information, leading to strong OOD generalization. This is illustrated by the t-SNE plot above. ERM clusters data based on color (R / G), while DRM learns to ignore color information and instead clusters data based on labels. 
+                </p>
+                <p> </p>
+                <p> </p>
                 </div>
         </div>
 
@@ -205,8 +211,6 @@
             <div class="col-md-10 col-lg-8">
                 <h3>
                     Covariate shift: Imitation learning with distractors
-                    <p>
-                    </p>
                 </h3>
                 <div class="col-md-12">
                     <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>

@@ -15,29 +15,29 @@
     gtag('config', 'G-QXEE17ZF5T');
     </script>
 
-    <title>Predictive Red Teaming: Breaking Policies Without Breaking Robots</title>
+    <title>Deceptive Risk Minimization: Out-of-Distribution Generalization by Deceiving Distribution Shift Detectors</title>
     <link rel="icon" type="image/png" href="images/favicon_transparent.png">
 
-    <meta name="description" content="Predictive Red Teaming: Breaking Policies Without Breaking Robots">
+    <meta name="description" content="Deceptive Risk Minimization: Out-of-Distribution Generalization by Deceiving Distribution Shift Detectors">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <base href="/"> -->
 
     <!--FACEBOOK-->
-    <meta property="og:image" content="https://predictive-red-team.github.io/images/share_image.png">
+    <meta property="og:image" content="https://deceptive-risk.github.io/images/share_image.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="682">
     <meta property="og:image:height" content="682">
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://predictive-red-team.github.io/"/>
-    <meta property="og:title" content="Predictive Red Teaming" />
-    <meta property="og:description" content="Project page for Predictive Red Teaming: Breaking Policies Without Breaking Robots." />
+    <meta property="og:url" content="https://deceptive-risk.github.io/"/>
+    <meta property="og:title" content="Deceptive Risk Minimization" />
+    <meta property="og:description" content="Project page for Deceptive Risk Minimization: Out-of-Distribution Generalization by Deceiving Distribution Shift Detectors." />
 
     <!--TWITTER-->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Robots That Ask For Help" />
-    <meta name="twitter:description" content="Project page for Predictive Red Teaming: Breaking Policies Without Breaking Robots." />
-    <meta name="twitter:image" content="https://predictive-red-team.github.io/images/share_image.png">
+    <meta name="twitter:title" content="Deceptive Risk Minimization" />
+    <meta name="twitter:description" content="Project page for Deceptive Risk Minimization." />
+    <meta name="twitter:image" content="https://deceptive-risk.github.io/images/share_image.png">
 
     <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
     <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
@@ -71,7 +71,7 @@
     <div class="container" id="main">
         <div class="row mt-4">
             <h2 class="col-md-12 text-center">
-                <b><font size="+6">Predictive Red Teaming</font></b>: </br> Breaking Policies Without Breaking Robots </br> 
+                <b>Deceptive Risk Minimization</b>: Out-of-Distribution Generalization by Deceiving Distribution Shift Detectors </br> 
             </h2>
         </div>
 
@@ -80,18 +80,8 @@
                 <ul class="list-inline">
                 <br>
                 <li><a href="//irom-lab.princeton.edu/majumdar/">Anirudha Majumdar</a></li>
-                <li><a href="https://scholar.google.co.in/citations?user=FBVwO5wAAAAJ&hl=en">Mohit Sharma</a></li>
-                <li><a href="https://scholar.google.com/citations?user=2DBmo-wAAAAJ&hl=en">Dmitry Kalashnikov</a></li>
-                <li><a href="https://research.google/people/sumeetsingh/?&type=google">Sumeet Singh</a></li>
-                <li><a href="https://sermanet.github.io/">Pierre Sermanet</a></li>
-                <li><a href="https://vikas.sindhwani.org/">Vikas Sindhwani</a></li>
                 <br>
                 <br>
-                    <a href="https://www.deepmind.com/">
-                        <image src="images/google-deepmind-logo.png" height="35px"> 
-                        <!-- Google DeepMind -->
-                    </a>
-                    &nbsp&nbsp&nbsp
                     <a href="https://www.princeton.edu/">
                         <image src="images/PU1line.svg" height="55px"> 
                         <!-- Princeton University                        -->
@@ -117,20 +107,15 @@
             <div class="col-md-10 col-lg-8">
                 <div class="col-md-12">
                     <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
-                        <source src="videos/anchor_website_compressed.mp4" type="video/mp4">
+                        <source src="videos/anchor_website.mp4" type="video/mp4">
                     </video>
                 </div>
                 <h3 class="mt-4 mb-2">
-                    Abstract
+                    Deceptive Risk Minimization
                 </h3>
                 <p class="text-justify">
-                    Visuomotor policies trained via imitation learning are capable of performing challenging manipulation tasks, but are often extremely brittle to lighting, visual distractors, and object locations. These vulnerabilities can depend unpredictably on the specifics of training, and are challenging to expose without time-consuming and expensive hardware evaluations. We propose the problem of predictive red teaming: discovering vulnerabilities of a policy with respect to environmental factors, and predicting the corresponding performance degradation without hardware evaluations in off-nominal scenarios. In order to achieve this, we develop RoboART: an automated red teaming (ART) pipeline that (1) modifies nominal observations using generative image editing to vary different environmental factors, and (2) predicts performance under each variation using a policy-specific anomaly detector executed on edited observations. Experiments across 500+ hardware trials in twelve off-nominal conditions for visuomotor diffusion policies demonstrate that RoboART predicts performance degradation with high accuracy (less than 0.19 average difference between predicted and real success rates). We also demonstrate how predictive red teaming enables targeted data collection: fine-tuning with data collected under conditions predicted to be adverse boosts baseline performance by 2--7x.
+                    This paper proposes <i>deception</i> as a mechanism for out-of-distribution (OOD) generalization: by learning data representations that make training data <i>appear</i> independent and identically distributed (iid) to an observer, we can identify stable features that eliminate spurious correlations and generalize to unseen domains. We refer to this principle as <i>deceptive risk minimization</i> (DRM) and instantiate it with a practical differentiable objective that simultaneously learns features that eliminate distribution shifts from the perspective of a detector based on conformal martingales while minimizing a task-specific loss. In contrast to domain adaptation or prior invariant representation learning methods, DRM does not require access to test data or a partitioning of training data into a finite number of data-generating domains. We empirically demonstrate the efficacy of DRM on numerical experiments involving imitation learning with covariate shift and classification problems with concept shift. 
                 </p>
-                <div class="col-md-12">
-                    <video id="v0" width="100%" preload="metadata" playsinline muted controls>
-                        <source src="videos/predictive_red_teaming.mp4" type="video/mp4">
-                    </video>
-                </div>
             </div>
         </div>
 
@@ -139,116 +124,36 @@
             <div class="col-md-10 col-lg-8">
                 <br>
                 <h3>
-                    Predictive Red Teaming
+                    An illustrative example
                 </h3>
                 <p class="text-justify">
-                    We introduce the problem of <strong>predictive red teaming</strong>: discovering vulnerabilities of a given robot policy with respect to changes in environmental factors, and predicting the (relative or absolute) degradation in performance <i>without performing hardware evaluations</i> in off-nominal scenarios.
-            </div>
+
+                    <p style="text-align:center;">
+                        <image src="images/martingale_values.png" width="100%">
+                    </p>
+
+                    Consider an imitation learning setting where a human has provided a sequence of examples to a robot demonstrating how to perform a given task. These demonstrations are provided in environments that vary the color of the table <i>slightly</i> in a structured way: a third of the demonstrations are provided with one table-bowl color combination, the next third with a slightly different color combination, and the final third with another. The standard approach to learning a policy in such a setting is empirical risk minimization (ERM): <i>assume</i> that data are iid and learn a mapping from the robot's observations to actions by minimizing a behavior cloning loss on training data. Such a policy performs well when deployed with table colors similar to ones seen during training, but fails with colors that are significantly different (see below for numerical results). 
+                </p>
+                <p>
+                    The starting point for our approach is the observation that the non-iid nature of data in this setting can be <i>inferred from the sequence of training environments</i>. The figure above shows the output from a distribution shift detector based on conformal martingales computed on observations from the training environments. This detector spikes strongly once the table color is changed. Crucially, the detector also spikes when provided with the sequence of latent features from the policy computed via ERM, indicating that the policy's latent representation encodes color information. 
+                </p>
+                <p>
+                Now consider a policy that eliminates the distribution shift from the perspective of an observer who is only presented with latent representations from the policy. Intuitively, the data can be made to "appear iid" by eliminating sensitivity to the table color, which leads to OOD generalization to different table colors.
+                </p>
+                </div>
         </div>
 
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
                 <h3>
-                    Approach
+                    Algorithmic Approach
                 </h3>
                 <p class="text-justify">
-                    We introduce <strong>RoboART (Robotics Auto-Red-Teaming)</strong>: a method for predictive red teaming using generative image editing and anomaly detection. We focus on visuomotor policies that rely primarily on RGB image observations. Our approach has two main steps. First, we use generative image editing tools to modify nominal observations to reflect changes in various factors of interest (e.g., background, lighting, distractor objects). For each factor, we then predict the performance degradation of the policy using anomaly detection. We describe each of these steps below.
-            </div>
-        </div>
-
-        <div class="row justify-content-md-center mt-4">
-            <div class="col-md-10 col-lg-8">
-                <h4>Step 1: Generative Image Editing</h4>
+                    Our goal is to find features that eliminate the distribution shift between training and test settings. Since the learner is only provided with the sequence of training data, we utilize distribution shifts observed in this data as a proxy. Specifically, we learn features that are stable along the training data sequence --- in the sense that they appear iid to an observer --- while also supporting the minimization of the task-specific loss. 
+                </p>
                 <p class="text-justify">
-                    First, we use automated image editing tools (<a href="https://deepmind.google/technologies/imagen-3/">Imagen 3</a>) to modify a set of nominal RGB observations by varying different factors of interest in a fine-grained and realistic manner via language instructions (e.g., “add a person close to the table”). Explore different types of edits below. 
-                
-                <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Examples of edits</h5>
-                    <div class="card-body">
-                        <p>Choose an edit instruction:</p>
-                        <select class="form-select" size="8" aria-label="size 5 select example" onchange="updateImage(this)">
-                            <option value="edit_1">1) Nominal observations (overhead and wrist cams)</option>
-                            <option value="edit_2">2) Add a person by the table</option>
-                            <option value="edit_3">3) Change the background to green</option>
-                            <option value="edit_4">4) Change the background to red</option>
-                            <!-- <option value="edit_5">5) Change the background to blue</option> -->
-                            <option value="edit_6">5) Add a black trash can</option>
-                            <option value="edit_7">6) Add a white trash can</option>
-                            <option value="edit_8">7) Add a candle</option>
-                            <option value="edit_9">8) Add a laptop</option>
-                            <option value="edit_10">9) Change the lighting to red</option>
-                            <option value="edit_11">10) Change the lighting to green</option>
-                            <option value="edit_12">11) Change the lighting to blue</option>
-                            <option value="edit_13">12) Change the table height</option>
-                        </select>
-        
-                        <!-- Image content corresponding to each edit -->
-                        <div id="image_edit_1" class="edit_image" style="display:block;">
-                            <img src="images/edit_nominal.png" width="100%" alt="Nominal Observations">
-                        </div>
-                        <div id="image_edit_2" class="edit_image" style="display:none;">
-                            <img src="images/edit_person.png" width="100%" alt="Add a person by the table">
-                        </div>
-                        <div id="image_edit_3" class="edit_image" style="display:none;">
-                            <img src="images/edit_background_green.png" width="100%" alt="Change the background to green">
-                        </div>
-                        <div id="image_edit_4" class="edit_image" style="display:none;">
-                            <img src="images/edit_background_red.png" width="100%" alt="Change the background to red">
-                        </div>
-                        <!-- <div id="image_edit_5" class="edit_image" style="display:none;">
-                            <img src="images/edit_background_blue.png" width="100%" alt="Change the background to blue">
-                        </div> -->
-                        <div id="image_edit_6" class="edit_image" style="display:none;">
-                            <img src="images/edit_black_trashcan.png" width="100%" alt="Add a black trash can">
-                        </div>
-                        <div id="image_edit_7" class="edit_image" style="display:none;">
-                            <img src="images/edit_white_trashcan.png" width="100%" alt="Add a white trash can">
-                        </div>
-                        <div id="image_edit_8" class="edit_image" style="display:none;">
-                            <img src="images/edit_candle.png" width="100%" alt="Add a candle">
-                        </div>
-                        <div id="image_edit_9" class="edit_image" style="display:none;">
-                            <img src="images/edit_laptop.png" width="100%" alt="Add a laptop">
-                        </div>
-                        <div id="image_edit_10" class="edit_image" style="display:none;">
-                            <img src="images/edit_lighting_red.png" width="100%" alt="Change the lighting to red">
-                        </div>
-                        <div id="image_edit_11" class="edit_image" style="display:none;">
-                            <img src="images/edit_lighting_green.png" width="100%" alt="Change the lighting to green">
-                        </div>
-                        <div id="image_edit_12" class="edit_image" style="display:none;">
-                            <img src="images/edit_lighting_blue.png" width="100%" alt="Change the lighting to blue">
-                        </div>
-                        <div id="image_edit_13" class="edit_image" style="display:none;">
-                            <img src="images/edit_table_height.png" width="100%" alt="Change the table height">
-                        </div>
-        
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <script>
-            function updateImage(selectElement) {
-                // Hide all images
-                let allImages = document.querySelectorAll('.edit_image');
-                allImages.forEach(function(image) {
-                    image.style.display = 'none';
-                });
-        
-                // Show the selected image
-                let selectedOption = selectElement.value;
-                let selectedImageDiv = document.getElementById('image_' + selectedOption);
-                selectedImageDiv.style.display = 'block';
-            }
-        </script>
-        <div class="row justify-content-md-center">
-            <div class="col-md-10 col-lg-8">
-                <h4>
-                    Step 2: Predict Performance
-                </h4>
-                <p class="text-justify">
-                    The second step is to predict the degradation in performance induced by each environmental factor using <i>anomaly detection</i>. We find that a simple anomaly detector that computes distances in policy embedding space between edited observations and a set of nominal observations (with an anomaly threshold computed using conformal prediction) is surprisingly predictive of both relative and absolute performance degradation. Specifically, we predict the success rate for a given environmental factor as 1 - anomaly rate (computed on edited observations for that factor).
+                    We formulate this learning mechanism as an adversarial game, which we refer to as <strong>deceptive risk minimization</strong> (DRM). An encoder network learns to generate representations that support minimization of a task-specific loss while simultaneously eliminating distribution shifts from the perspective of a detector presented with a sequence of learned representations. We present a practical instantiation of DRM that utilizes <i>conformal martingales</i> (CMs) for distribution shift detection. Concretely, the CM approach computes a quantity that grows quickly in the presence of distribution shifts, but remains small when data are exchangeable. We derive an end-to-end differentiable loss that penalizes the conformal martingale computed on encoded inputs; this loss serves to train the encoder to learn representations that eliminate distribution shifts from the perspective of the CM-based detector.
+                </p>
             </div>
         </div>
 
@@ -256,27 +161,29 @@
             <div class="col-md-10 col-lg-8">
                 <h3>
                     Experiments
+                    
                 </h3>
-                <div class="col-md-12">
-                    <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
-                        <source src="videos/hardware_clips_compressed.mp4" type="video/mp4">
-                    </video>
-                </div>
+                <p>
+                </p>
+                <p style="text-align:center;">
+                        <image src="images/all_results.png" width="100%">
+                    </p>
                 <p class="text-justify">
-                    We evaluated RoboART using 500+ hardware experiments that vary twelve environmental factors for two visuomotor diffusion policies with significantly different architectures.
+                    We evaluate DRM in three sets of experiments involving concept shift and covariate shift. Across all three examples, we find that DRM leads to strong OOD generalization in settings involving spurious correlations or irrelevant distractors. In contrast, standard empirical risk minimization (ERM) fails to generalize. We also compare to invariant risk minimization (IRM), which assumes oracle access to a partitioning of training data into a finite number of domains; we find that DRM is able to match the performance of IRM without requiring such an oracle.
                 </div>
         </div>
 
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
                 <h3>
-                    Results
+                    Concept shift: Toy 2D example
                 </h3>
-                <p class="text-justify">
-                    We find that RoboART predicts performance degradation with a high degree of accuracy. The figure below evaluates predictions made by RoboART for a policy that combines diffusion with trajectory optimization (left: rankings of environmental factors by performance degradation, and right: absolute success rates). Predictions are compared to the true rankings and success rates as measured by 20+ hardware evaluations for each factor. RoboART correctly predicts that changing the table height will degrade performance significantly, changing the background and lighting will degrade performance moderately, and adding distractors will induce a mild degradation. The <a href="https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient">Spearman rank correlation</a> between predicted and real ranks is <strong>0.8</strong>. The difference between predicted and real success rates averaged across the twelve factors is <strong>0.1</strong>.
-                
+                <p class="text-justify">                
                     <p style="text-align:center;">
-                        <image src="images/prediction_results_hybrid.png" width="100%">
+                        <image src="images/simple_example_decision_boundary.png" width="100%">
+                    </p>
+
+                    This is a binary classification task with 2D inputs, where the second input dimension strongly but spuriously correlates with the label. Empirical risk minimization (ERM) latches on to this correlation and learns a classifier that relies heavily on the spuriously correlated input dimension (see the decision boundary for ERM above). However, when the correlation is reversed at test time, the performance of the ERM classifier degrades significantly. In contrast, DRM learns a classifier that relies on the stable feature (the first input dimension) and generalizes well to test data.
                     </p>
                 </div>
         </div>
@@ -284,23 +191,30 @@
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
                 <h3>
-                    Targeted Data Collection
+                    Concept shift: Colored-MNIST
+                </h3>
+                <p style="text-align:center;">
+                    <image src="images/colored_mnist_tsne.png" width="100%">
+                </p>
+                <p class="text-justify">
+                    Next, we consider the Colored-MNIST task introduced by Arjovsky et al. (2019). The goal is to classify MNIST images, where the digits have been colored either red or green. Similar to the toy 2D example, the color is assigned in a way that has a strong (but spurious) correlation with the label. As a result, ERM-based methods that only rely on minimizing training loss exploit the color information to make predictions; when the correlation between color and the label is reversed at test time, performance degrades significantly. In contrast, DRM learns to ignore color information, leading to strong OOD generalization. This is illustrated by the t-SNE plot above. ERM clusters data based on color (R / G), while DRM learns to ignore color information and instead clusters data based on labels. 
+                </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3>
+                    Covariate shift: Imitation learning with distractors
+                    <p>
+                    </p>
                 </h3>
                 <div class="col-md-12">
                     <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
-                        <source src="videos/finetuning_clip_compressed.mp4" type="video/mp4">
+                        <source src="videos/imitation_video.mp4" type="video/mp4">
                     </video>
                 </div>
                 <p class="text-justify">
-                    We demonstrate
-the utility of predictive red teaming for <i>targeted data collection</i>: by co-finetuning the policy with data collected in the three conditions predicted to be the most adverse, performance is boosted in these
-conditions by 2--7x. Moreover, targeted data collection also
-yields <i>cross-domain generalization</i>: the performance of the
-policy is improved by 2--5x even for conditions where we
-did not collect data.
-                <p style="text-align:center;">
-                    <image src="images/finetuning.png" width="80%">
-                </p>
+                    We consider an imitation learning setting with covariate shift across environments that the robot is trained and deployed in. The task is to pick up and place a red block into a bowl using observations from an RGB camera. The training data consists of 300 expert demonstrations of pick-and-place locations, which are provided in different environments. A third of the demonstrations are provided with one table-and-bowl color combination, the next third with a slightly different combination, and the final third with another combination. At test time, the bowl and table background color are changed to a novel combination that significantly exaggerates the changes seen during training. This results in the performance of behavior cloning (ERM) collapsing, while DRM maintains nearly the same performance as in-distribution settings.
                 </div>
         </div>
 
@@ -327,8 +241,7 @@ did not collect data.
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                    <!-- We would like to thank Gabriela Taras, Lama Yassine, Aigerim Kdyrgali, Khaled Hussein, Zac Gong, Rajash Budhoo, and Chad Bodoo for help with hardware experiments.  -->
-                    We are grateful to Shixin Luo and Suraj Kothawade for extremely helpful pointers on the image editing pipeline. We thank Alex Irpan for insightful feedback on an early version of the paper. We are grateful to Dave Orr, Anca Dragan, and Vincent Vanhoucke for continuous guidance on safety-related topics; and Frankie Garcia and Dawn Bloxwich on responsible development. The website template is modified from <a href="https://code-as-policies.github.io/">Code as Policies</a>.
+                    This work was supported by the Office of Naval Research (N00014-23-1-2148). The website template is modified from <a href="https://code-as-policies.github.io/">Code as Policies</a>.
                 </p>
             </div>
         </div>
